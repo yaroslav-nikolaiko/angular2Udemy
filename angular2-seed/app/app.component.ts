@@ -5,6 +5,7 @@ import {FavoriteComponent} from "./favorite.component";
 import {LikeComponent} from "./like.component";
 import {VoterComponent} from "./voter.component";
 import {ZippyComponent} from "./zippy.component";
+import {SubscriptionFormComponent} from "./subscription-form.component";
 
 @Component({
     selector: 'my-app',
@@ -21,8 +22,11 @@ import {ZippyComponent} from "./zippy.component";
     <authors></authors>
     
     <zippy title="This is Title">This is Body</zippy>
+    
+    <subscription-form></subscription-form>
     `,
-    directives: [CoursesComponent, AuthorsComponent, FavoriteComponent, LikeComponent, VoterComponent, ZippyComponent]
+    directives: [CoursesComponent, AuthorsComponent, FavoriteComponent, LikeComponent, 
+        VoterComponent, ZippyComponent, SubscriptionFormComponent]
 })
 export class AppComponent {
     isFavorite=false;

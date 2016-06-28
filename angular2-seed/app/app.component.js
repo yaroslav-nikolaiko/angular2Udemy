@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './author.component', "./favorite.component", "./like.component", "./voter.component", "./zippy.component"], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './author.component', "./favorite.component", "./like.component", "./voter.component", "./zippy.component", "./subscription-form.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './author.component', "
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, author_component_1, favorite_component_1, like_component_1, voter_component_1, zippy_component_1;
+    var core_1, courses_component_1, author_component_1, favorite_component_1, like_component_1, voter_component_1, zippy_component_1, subscription_form_component_1;
     var AppComponent;
     return {
         setters:[
@@ -34,6 +34,9 @@ System.register(['angular2/core', './courses.component', './author.component', "
             },
             function (zippy_component_1_1) {
                 zippy_component_1 = zippy_component_1_1;
+            },
+            function (subscription_form_component_1_1) {
+                subscription_form_component_1 = subscription_form_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -59,8 +62,9 @@ System.register(['angular2/core', './courses.component', './author.component', "
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>Hello Angular</h1>\n    <button (click)=\"onClick($event)\">Click Me 2</button>\n    <courses></courses>\n    <favorite [is-favorite]=\"true\" (change)=\"onFavoriteChange($event)\"></favorite>\n    <like [likes]=\"tweet.likes\" [active]=\"tweet.active\"></like>\n    <div style=\"margin-left: 10px\">\n        <voter [voteCount]=\"tweet.voteCount\" [myVote]=\"tweet.myVote\" (vote)=\"onTweetChange($event)\" ></voter>\n    </div>\n    \n    <authors></authors>\n    \n    <zippy title=\"This is Title\">This is Body</zippy>\n    ",
-                        directives: [courses_component_1.CoursesComponent, author_component_1.AuthorsComponent, favorite_component_1.FavoriteComponent, like_component_1.LikeComponent, voter_component_1.VoterComponent, zippy_component_1.ZippyComponent]
+                        template: "\n    <h1>Hello Angular</h1>\n    <button (click)=\"onClick($event)\">Click Me 2</button>\n    <courses></courses>\n    <favorite [is-favorite]=\"true\" (change)=\"onFavoriteChange($event)\"></favorite>\n    <like [likes]=\"tweet.likes\" [active]=\"tweet.active\"></like>\n    <div style=\"margin-left: 10px\">\n        <voter [voteCount]=\"tweet.voteCount\" [myVote]=\"tweet.myVote\" (vote)=\"onTweetChange($event)\" ></voter>\n    </div>\n    \n    <authors></authors>\n    \n    <zippy title=\"This is Title\">This is Body</zippy>\n    \n    <subscription-form></subscription-form>\n    ",
+                        directives: [courses_component_1.CoursesComponent, author_component_1.AuthorsComponent, favorite_component_1.FavoriteComponent, like_component_1.LikeComponent,
+                            voter_component_1.VoterComponent, zippy_component_1.ZippyComponent, subscription_form_component_1.SubscriptionFormComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
